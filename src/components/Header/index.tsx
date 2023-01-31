@@ -1,29 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
 import NavLinks from './NavLinks'
+
 const linkList = [
   {
-    label: 'Link 1',
+    label: 'About me',
     url: '/',
   },
   {
-    label: 'Link 2',
-    url: '/1',
+    label: 'Projects',
+    url: '/projects',
   },
   {
-    label: 'Link 3',
-    url: '/2',
-  },
-  {
-    label: 'Link 4',
-    url: '/3',
+    label: 'Contact',
+    url: '/contact',
   },
 ]
 
 const Header: React.FC<{}> = () => {
   return (
     <Container>
-      <h1>Duran Ray</h1>
+      <h1>D.R</h1>
       <NavLinks links={linkList} />
     </Container>
   )
@@ -37,8 +34,4 @@ const Container = styled.div`
   padding: 10px;
 `
 
-const LinkContainer = styled.div`
-  display: flex;
-  gap: 10px;
-`
 export default Header

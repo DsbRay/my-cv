@@ -14,9 +14,8 @@ const NavLinks: React.FC<LinkProps> = ({ links }: LinkProps) => {
   const [activeLink, setActiveLink] = useState('/')
 
   useEffect(() => {
-    if (window) {
-      setActiveLink(window.location.pathname)
-    }
+    const pathName = typeof window !== 'undefined' ? window.location.pathname : ''
+    setActiveLink(pathName)
   }, [])
 
   return (

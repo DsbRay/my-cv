@@ -10,6 +10,10 @@
   --jaggedIce: #87cbe4;
 }
 
+* {
+  cursor: none;
+}
+
 body,
 h1,
 h2,
@@ -30,7 +34,7 @@ a {
   color: black;
   outline: none;
   text-decoration: none;
-  cursor: pointer;
+  cursor: none;
 }
 
 button {
