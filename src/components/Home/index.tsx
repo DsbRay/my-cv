@@ -1,12 +1,17 @@
-import React, { useEffect, useState } from 'react'
-import TransitionButton from '../elements/TransitionButton'
-
+import React from 'react'
+import SpaceParallax from './SpaceParallax'
+import styled from 'styled-components'
 const HomePage: React.FC<{}> = () => {
   return (
-    <div>
-      <TransitionButton label='Next page' to='/page-2' color='blue' direction='up' />
-    </div>
+    <HomeContainer>
+      <SpaceParallax />
+    </HomeContainer>
   )
 }
 
+const HomeContainer = styled.div`
+  background-color: black;
+  height: calc(100vh - 50px);
+  max-height: calc(100vh - 50px);
+`
 export default HomePage

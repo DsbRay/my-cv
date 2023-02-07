@@ -6,8 +6,9 @@
   --white: #fff;
   --gray: #e5e5e5;
   /* primary colours */
-  --redBerry: #8a0101;
-  --jaggedIce: #87cbe4;
+  --shark: #212529;
+  --grayChateau: #a4a5a6;
+  --tango: #ee7623;
 }
 
 * {
