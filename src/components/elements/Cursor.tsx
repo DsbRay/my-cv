@@ -15,7 +15,7 @@ const Element = styled.div`
   left: 50%;
   width: 20px;
   height: 20px;
-  background-color: var(--tango);
+  background-color: var(--lochinvar);
   border-radius: 100%;
   z-index: 999;
   mix-blend-mode: difference;

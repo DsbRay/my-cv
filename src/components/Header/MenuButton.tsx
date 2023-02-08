@@ -41,11 +41,11 @@ const Menu = styled.div`
     div {
       &:first-child {
         width: 50%;
-        background-color: var(--tango);
+        background-color: var(--lochinvar);
       }
       &:last-child {
         width: 30%;
-        background-color: var(--tango);
+        background-color: var(--lochinvar);
       }
       &:nth-child(2) {
         width: 80%;

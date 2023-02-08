@@ -9,7 +9,9 @@ type HomePageProps = {
   children: ReactNode
 }
 
-const Main = styled.div``
+const Main = styled.div`
+  background-color: var(--black);
+`
 
 export default function Layout({ children }: HomePageProps) {
   return (

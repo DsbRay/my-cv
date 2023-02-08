@@ -54,7 +54,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isMenuActive }: SidebarProps) => {
 }
 
 const Container = styled.div`
-  background-color: var(--tango);
+  background-color: var(--lochinvar);
   height: calc(100vh - 50px);
   width: 30vw;
   position: fixed;
