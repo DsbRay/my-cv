@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import styled from 'styled-components'
 import gsap from 'gsap'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import { MouseContext } from '../../utils/mouseContext'
 
 import MenuButton from './MenuButton'
 import Sidebar from './Sidebar'
 
 const Header: React.FC<{}> = () => {
+  const { cursorChangeHandler } = useContext(MouseContext)
   const [isMenuActive, setIsMenuActive] = useState(false)
-  // TWEEN
   const [sidebarTween, setSidebarTween] = useState<any>(null)
 
   const handleIsMenuActive = () => {
@@ -34,7 +36,17 @@ const Header: React.FC<{}> = () => {
   return (
     <>
       <Container>
-        <h1>D.R</h1>
+        <HomeLink
+          to={'/'}
+          bg={'#000'}
+          direction={'left'}
+          cover
+          duration={0.75}
+          onMouseEnter={() => cursorChangeHandler('hovered')}
+          onMouseLeave={() => cursorChangeHandler('')}
+        >
+          D.R
+        </HomeLink>
         <MenuButton isMenuActive={isMenuActive} handleIsMenuActive={handleIsMenuActive} />
       </Container>
       <Sidebar isMenuActive={isMenuActive} />
@@ -49,6 +61,11 @@ const Container = styled.div`
   justify-content: space-between;
   padding: 0 10px;
   height: 50px;
+`
+
+const HomeLink = styled(AniLink)`
+  color: var(--white);
+  font-size: 1.8rem;
 `
 
 export default Header
