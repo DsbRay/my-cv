@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react'
 import styled from 'styled-components'
 import { MY_WORK_LIST } from './data'
+import { MouseContext } from '../../utils/mouseContext'
 
 import Button from '../elements/Button'
 
@@ -13,6 +14,8 @@ type SliderProps = {
 }
 
 const WorkDetails: React.FC<SliderProps> = ({ swiperIndex }: SliderProps) => {
+  const { cursorChangeHandler } = useContext(MouseContext)
+
   const [data, setData] = useState(MY_WORK_LIST[swiperIndex])
 
   useEffect(() => {
@@ -35,7 +38,13 @@ const WorkDetails: React.FC<SliderProps> = ({ swiperIndex }: SliderProps) => {
       {udemyUrl ? (
         <Udemy>
           <p>{udemyCourse}</p>
-          <img src={udemyIcon} />
+          <a
+            href={udemyUrl}
+            onMouseEnter={() => cursorChangeHandler('hovered')}
+            onMouseLeave={() => cursorChangeHandler('')}
+          >
+            <img src={udemyIcon} alt='udemy logo' />
+          </a>
         </Udemy>
       ) : null}
     </Container>
@@ -66,6 +75,7 @@ const Udemy = styled.div`
   text-align: center;
   p {
     color: var(--white);
+    padding: 20px 0;
   }
   img {
     width: 100px;
