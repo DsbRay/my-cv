@@ -12,22 +12,22 @@ const TRANSITION_LINKS = [
     id: 1,
     label: 'About me',
     to: '/about-me/',
-    transitionColor: '#000',
-    direction: 'left',
+    transitionColor: '#2a9085',
+    direction: 'top',
   },
   {
     id: 2,
     label: 'My Work',
     to: '/my-work/',
-    transitionColor: '#000',
+    transitionColor: '#2a9085',
     direction: 'left',
   },
   {
     id: 3,
     label: 'Contact',
     to: '/',
-    transitionColor: '#000',
-    direction: 'left',
+    transitionColor: '#2a9085',
+    direction: 'right',
   },
 ]
 

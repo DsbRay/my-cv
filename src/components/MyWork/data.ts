@@ -13,13 +13,15 @@ import typescriptIcon from '../../images/icons/typescript.svg'
 // import angularIcon from '../../images/icons/angular-logo.svg'
 import firebaseIcon from '../../images/icons/firebase.svg'
 import gsap from '../../images/icons/gsap.svg'
+// import javascriptIcon from "../../images/icons/javascript.svg"
 
 export type ProjectProps = {
   title: string
   githubUrl: string
   siteUrl: string
   previewImg: string
-  udemyUrl: string
+  udemyCourse?: string | null
+  udemyUrl?: string | null
   tools: []
 }
 
@@ -29,12 +31,12 @@ export const MY_WORK_LIST = [
     githubUrl: "https://github.com/DsbRay/my-cv",
     siteUrl: "https://my-cv-ruby.vercel.app/",
     previewImg: CvImage,
-    udemyUrl: "",
     tools: [
       reactIcon,
       gatsbyIcon,
       typescriptIcon,
       styledIcon,
+      gsap,
     ]
   },
   {
@@ -42,7 +44,8 @@ export const MY_WORK_LIST = [
     githubUrl: "https://github.com/DsbRay/crown-clothing",
     siteUrl: "https://crown-clothing-xi.vercel.app/",
     previewImg: CrownClothingImage,
-    udemyUrl: "",
+    udemyCourse: "Complete React Developer in 2023 (w/ Redux, Hooks, GraphQL)",
+    udemyUrl: "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/",
     tools: [
       reactIcon,
       typescriptIcon,
@@ -55,7 +58,8 @@ export const MY_WORK_LIST = [
     githubUrl: "https://github.com/DsbRay/monsters-rolodex",
     siteUrl: "https://monsters-rolodex-nu-three.vercel.app/",
     previewImg: MonstersRolodexImage,
-    udemyUrl: "",
+    udemyCourse: "Complete React Developer in 2023 (w/ Redux, Hooks, GraphQL)",
+    udemyUrl: "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/",
     tools: [
       reactIcon,
       typescriptIcon,
@@ -67,7 +71,6 @@ export const MY_WORK_LIST = [
     githubUrl: "",
     siteUrl: "",
     previewImg: shareValueImage,
-    udemyUrl: "",
     tools: [
       reactIcon,
       typescriptIcon,
