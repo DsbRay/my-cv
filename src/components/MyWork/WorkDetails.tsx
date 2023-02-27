@@ -5,9 +5,9 @@ import { MouseContext } from '../../utils/mouseContext'
 
 import Button from '../elements/Button'
 
-import gitHubIcon from '../../images/icons/github.svg'
+import gitHubIcon from '../../images/tools/github.svg'
 import codeIcon from '../../images/icons/code.svg'
-import udemyIcon from '../../images/icons/udemy.svg'
+import udemyIcon from '../../images/tools/udemy.svg'
 
 type SliderProps = {
   swiperIndex: number

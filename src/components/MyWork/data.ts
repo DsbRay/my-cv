@@ -1,19 +1,20 @@
 // PROJECTS
 import MonstersRolodexImage from '../../images/projects/monsters-rolodex-project.png'
 import CrownClothingImage from '../../images/projects/crown-clothing-project.png'
-import CvImage from '../../images/projects/my-cv.png'
-import shareValueImage from '../../images/projects/shareValue.png'
+import CvImage from '../../images/projects/my-cv-project.png'
+import shareValueImage from '../../images/projects/shareValue-project.png'
+import clipzImage from '../../images/projects/clipz-project.png'
 
 // TOOL ICONS
-import reactIcon from '../../images/icons/react.svg'
-import cssIcon from '../../images/icons/css.svg'
-import gatsbyIcon from '../../images/icons/gatsby.svg'
-import styledIcon from '../../images/icons/styled-components.svg'
-import typescriptIcon from '../../images/icons/typescript.svg'
-// import angularIcon from '../../images/icons/angular-logo.svg'
-import firebaseIcon from '../../images/icons/firebase.svg'
-import gsap from '../../images/icons/gsap.svg'
-// import javascriptIcon from "../../images/icons/javascript.svg"
+import reactIcon from '../../images/tools/react.svg'
+import cssIcon from '../../images/tools/css.svg'
+import gatsbyIcon from '../../images/tools/gatsby.svg'
+import styledIcon from '../../images/tools/styled-components.svg'
+import typescriptIcon from '../../images/tools/typescript.svg'
+import angularIcon from '../../images/tools/angular.svg'
+import firebaseIcon from '../../images/tools/firebase.svg'
+import gsap from '../../images/tools/gsap.svg'
+// import javascriptIcon from "../../images/tools/javascript.svg"
 
 export type ProjectProps = {
   title: string
@@ -76,6 +77,20 @@ export const MY_WORK_LIST = [
       typescriptIcon,
       cssIcon,
       gsap,
+    ]
+  },
+  {
+    title: "Clipz",
+    githubUrl: "https://github.com/DsbRay/clipz",
+    siteUrl: "https://clipz-delta.vercel.app/",
+    previewImg: clipzImage,
+    udemyCourse: "Complete Angular Developer in 2022: Zero to Mastery",
+    udemyUrl: "https://www.udemy.com/course/complete-angular-developer-zero-to-mastery/",
+    tools: [
+      angularIcon,
+      typescriptIcon,
+      cssIcon,
+      firebaseIcon,
     ]
   },
 ]

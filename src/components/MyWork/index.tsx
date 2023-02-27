@@ -8,7 +8,6 @@ const MyWork = () => {
   const [swiperIndex, setSwiperIndex] = useState(0)
 
   const handleSlideChange = (i: number) => setSwiperIndex(i)
-
   return (
     <Container background={spaceBackground}>
       <SelectList handleSlideChange={handleSlideChange} swiperIndex={swiperIndex} />
