@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import SpaceParallax from './SpaceParallax'
 import ScreenTitle from './ScreenTitle'
-import background from '../../images/background-1.jpg'
+import background from '../../images/space/space-background.jpg'
 
 const HomePage = () => {
   return (

@@ -38,8 +38,8 @@ const Header: React.FC<{}> = () => {
       <Container>
         <HomeLink
           to={'/'}
-          bg={'#000'}
-          direction={'left'}
+          bg={'#2a9085'}
+          direction={'bottom'}
           cover
           duration={0.75}
           onMouseEnter={() => cursorChangeHandler('hovered')}

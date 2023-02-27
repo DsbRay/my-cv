@@ -1,10 +1,10 @@
-import spaceOne from '../../../images/planet-1.png'
-import spaceTwo from '../../../images/planet-2.png'
-import spaceThree from '../../../images/planet-3.png'
-import spaceFour from '../../../images/planet-4.png'
-import spaceFive from '../../../images/planet-5.png'
+import spaceOne from '../../../images/space/planet-1.png'
+import spaceTwo from '../../../images/space/planet-2.png'
+import spaceThree from '../../../images/space/planet-3.png'
+import spaceFour from '../../../images/space/planet-4.png'
+import spaceFive from '../../../images/space/planet-5.png'
 
-import Spaceman from '../../../images/space-1.png'
+import Spaceman from '../../../images/space/space-1.png'
 
 export const IMAGE_LIST = [
   {
