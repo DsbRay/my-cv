@@ -37,11 +37,7 @@ const AboutMe = () => {
 }
 
 const Container = styled.div<{ background: string }>`
-  background-image: ${({ background }) => `url(${background})`};
-  background-position: center;
-  background-size: cover;
   color: var(--white);
-  min-height: calc(100vh - 50px);
   padding: 10px;
   .grid {
     display: grid;

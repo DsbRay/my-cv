@@ -44,11 +44,15 @@ const Container = styled.div`
     padding-bottom: 20px;
     font-size: 24px;
   }
+  p {
+    padding-bottom: 5px;
+  }
   .grid {
     grid-template-columns: 1fr 1fr;
     .stars {
       display: flex;
       gap: 10px;
+      padding-bottom: 10px;
       img {
         width: 30px;
       }

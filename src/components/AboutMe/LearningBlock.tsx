@@ -36,6 +36,7 @@ const Course = styled.div`
     padding-bottom: 5px;
     &.title {
       font-size: 16px;
+      font-weight: 700;
     }
     &.status {
       font-size: 14px;

@@ -22,6 +22,9 @@ const Container = styled.div`
     padding-bottom: 20px;
     font-size: 24px;
   }
+  p {
+    padding-bottom: 5px;
+  }
 `
 
 export default HobbiesBlock

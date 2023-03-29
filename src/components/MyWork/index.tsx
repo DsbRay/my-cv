@@ -24,10 +24,6 @@ const Container = styled.div<{ background: string }>`
   justify-content: center;
   padding: 0 20px;
   gap: 50px;
-  background-image: ${({ background }) => `url(${background})`};
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
 `
 
 export default MyWork

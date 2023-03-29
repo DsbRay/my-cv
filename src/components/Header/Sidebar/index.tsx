@@ -55,12 +55,12 @@ const Sidebar: React.FC<SidebarProps> = ({ isMenuActive }: SidebarProps) => {
 
 const Container = styled.div`
   background-color: var(--lochinvar);
-  height: calc(100vh - 50px);
+  height: 100vh;
   width: 30vw;
   position: fixed;
   right: calc(-30vw - 100px);
-  top: 50px;
-  z-index: 99;
+  z-index: 9;
+  top: 0;
 `
 
 const List = styled.div`
