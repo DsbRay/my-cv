@@ -25,7 +25,7 @@ const TRANSITION_LINKS = [
   {
     id: 3,
     label: 'Contact',
-    to: '/',
+    to: '/contact',
     transitionColor: '#2a9085',
     direction: 'right',
   },
